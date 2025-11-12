@@ -32,19 +32,34 @@ Hardware – PCs, Cyclone II , USB flasher
 
 
 **Program:**
+module funct1(a,b,c,d,f1);
+input a,b,c,d;
+output f1;
+assign f1=((~b & ~d)|(~a & b & d)|(a & b & ~c));
+endmodule
 
-/* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
-
-Developed by: RegisterNumber:*/
+module funct2(w,x,y,z,f2);
+input w,x,y,z;
+output f2;
+assign f2=((~y & z)|( w & y )|(x & y));
+endmodule
 
 
 **RTL realization**
+<img width="1920" height="1080" alt="Screenshot (86)" src="https://github.com/user-attachments/assets/6ea81209-f324-46f2-83ea-295b836bed3f" />
 
-**Output:**
+<img width="1920" height="1080" alt="Screenshot (89)" src="https://github.com/user-attachments/assets/0d44c96f-3494-4f1a-a34e-07ec4e6f9faa" />
+
 
 **RTL**
+<img width="1920" height="1080" alt="Screenshot (87)" src="https://github.com/user-attachments/assets/e97560fa-b2e0-4b18-9621-4b40e453f5ca" />
+
+
+<img width="1920" height="1080" alt="Screenshot (90)" src="https://github.com/user-attachments/assets/2dd8d231-47f2-4d31-acdf-54c694fd407e" />
 
 **Timing Diagram**
+<img width="1920" height="1080" alt="Screenshot (87)" src="https://github.com/user-attachments/assets/3ea1f79c-daf2-42da-84d2-284aa3db40ab" />
+<img width="1920" height="1080" alt="Screenshot (90)" src="https://github.com/user-attachments/assets/68bb8b34-c29b-4f61-a846-0c9b5cdddbfb" />
 
 **Result:**
 
