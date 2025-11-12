@@ -32,18 +32,27 @@ Hardware – PCs, Cyclone II , USB flasher
 
 
 **Program:**
+```
 module funct1(a,b,c,d,f1);
+
 input a,b,c,d;
+
 output f1;
+
 assign f1=((~b & ~d)|(~a & b & d)|(a & b & ~c));
+
 endmodule
 
 module funct2(w,x,y,z,f2);
-input w,x,y,z;
-output f2;
-assign f2=((~y & z)|( w & y )|(x & y));
-endmodule
 
+input w,x,y,z;
+
+output f2;
+
+assign f2=((~y & z)|( w & y )|(x & y));
+
+endmodule
+```
 
 **RTL realization**
 <img width="1920" height="1080" alt="Screenshot (86)" src="https://github.com/user-attachments/assets/6ea81209-f324-46f2-83ea-295b836bed3f" />
